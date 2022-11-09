@@ -1,7 +1,5 @@
 package com.br.lead.main.model;
 
-import com.sun.istack.NotNull;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,16 +12,12 @@ public class Lead {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
-    @NotNull
     private String nome;
 
-    @NotNull
     private Integer ddd;
 
-    @NotNull
     private Integer telefone;
 
-    @NotNull
     private String email;
 
     public Lead() {
