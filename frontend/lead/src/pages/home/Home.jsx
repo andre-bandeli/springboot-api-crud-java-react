@@ -11,6 +11,12 @@ export default function Home() {
   const [ddd, setDDD] = useState("")
   const [telefone, setTelefone] = useState("")
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log("refresh prevented");
+  };
+
+
   const handleClick=(e)=> {
     e.preventDefault()
     const lead = {nome, email, ddd, telefone}
@@ -35,7 +41,7 @@ export default function Home() {
           <div className="container-md-6-forms">
             <div className="forms">
 
-              <form noValidate autoComplete='off'>
+              <form noValidate autoComplete='off' onSubmit={onSubmit}>
 
                 <h2>Nome completo</h2>
                 <TextField id="standard-basic" className='standard-basic' label="Seu nome completo" variant='outlined' value={nome} 
@@ -60,7 +66,7 @@ export default function Home() {
                   (e)=>setTelefone(e.target.value)}  />
                 </div>
                 
-                <Button variant='contained' className='btn' onClick={handleClick}>
+                <Button variant='contained' className='btn' onClick={handleClick} type="submit">
                   Enviar
                 </Button>
                 

@@ -78,7 +78,17 @@
                     border-radius: 5px;
                     label {
                         color: rgba(245, 222, 179, 0.662);
+
                     }
+                    .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                        width: 0px;
+                        border: none;
+                    }
+                    input {
+                        color: white;
+                        border: none;
+                    }
+                    
                 }
                 .standard-basic-box {
                     width: 20%;
@@ -91,6 +101,12 @@
                     label {
                         color: rgba(245, 222, 179, 0.662);
                     }
+                    .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                        width: 0px;
+                    }
+                    input {
+                        color: white;
+                    }
                 }
                 .standard-basic-box-2 {
                     width: 40%;
@@ -101,6 +117,12 @@
                     border-radius: 5px;
                     label {
                         color: rgba(245, 222, 179, 0.662);
+                    }
+                    .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                        width: 0px;
+                    }
+                    input {
+                        color: white;
                     }
                 }
 
@@ -120,12 +142,157 @@
                     width: 50%;
                     margin-left: 25%;
                     margin-top: 50px;
+                    margin-bottom: 50px;
                     background-color: transparent;
                     border: 1px solid rgb(10, 10, 10);
                 }
                 .btn:hover {
                     background-color: rgba(30, 23, 24, 0.779);
                     color: orangered;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1440px) {
+    .home {
+        .container {
+            .container-md-6 {
+                h2 {
+                    margin-top: 50px;
+                    span {
+                    }
+                }
+            }
+            .container-md-6-forms {
+
+                .btn {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+    .home {
+        height: 100vh;
+        .container {
+            .container-md-6 {
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        height: 130vh;
+        .container {
+            display: inline;
+            .container-md-6 {
+              width: 100%;
+    
+                h2 {
+                  margin-top: 25px;
+                  font-size: 65px;
+                    span {
+                    }
+                }
+                h3 {
+                   font-size: 20px;
+                }
+                h4 {
+                    margin-top: 20px;
+                 width: 100%;
+                }
+            }
+            .container-md-6-forms {
+                width: 100%;
+                .forms {
+                    h2 {
+                      margin-top: 25px;
+                      padding-top: 10px;
+                      font-size: 18px;
+                    }
+                    .standard-basic {
+                        label {
+                            color: rgba(245, 222, 179, 0.662);
+                        }
+                    }
+                    .standard-basic-box {
+                        width: 50%;
+                        margin-left: 0;
+                        margin-right: 15px;
+                    }
+                    .standard-basic-box-2 {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+    
+    
+                    .tel {
+                        display: inline;
+                    }
+    
+                    .btn {
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .home {
+        height: 190vh;
+        .container {
+            .container-md-6 {
+                h2 {
+                    margin-top: 50px;
+                    span {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .home {
+        height: 190vh;
+        .container {
+            .container-md-6 {
+                h2 {
+                    font-size: 45px;
+                    span {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .home {
+        height: 190vh;
+        .container {
+            .container-md-6 {
+                h2 {
+                    font-size: 35px;
+                    span {
+                    }
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                h4 {
+                    font-size: 15px;
                 }
             }
         }
