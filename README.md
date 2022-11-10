@@ -15,8 +15,7 @@ e MySQL. Execução do banco de dados em container docker. Frontend utilizando R
 ### Instalação:
 
 
-1. Rode a aplicação frontend
-Crie uma pasta e clone o projeto. Certifique-se de ter insdtalado em sua máquina o Node e o React (https://pt-br.reactjs.org/).
+Rode a aplicação frontend. Crie uma pasta e clone o projeto. Certifique-se de ter insdtalado em sua máquina o Node e o React (https://pt-br.reactjs.org/).
 Caminhe até a pasta onde encontra-se a raíz do projeto (odonto > 'src', 'public', etc) e instale os pacotes necessários. Em seguida, execute o comando para iniciar a aplicação react.
 
         git clone https://github.com/andre-bandeli/springboot-api-crud-java-react.git
@@ -26,7 +25,10 @@ Caminhe até a pasta onde encontra-se a raíz do projeto (odonto > 'src', 'publi
         npx react instal
         npm start
 
-2. Rode a aplicação spring boot
+Rode a aplicação spring boot
+
+      mvn spring-boot:run
+
 ### Pacotes Importantes:
 
 SASS
