@@ -62,12 +62,10 @@ dom
 
 Em caso de dúvidas, sugestões ou melhorias, abra uma nova issue ou envie uma mensagem através de alguma de minhas redes
 
-- Email: andre.lbandeli@gmail.com
 - Linkedin: https://www.linkedin.com/in/andrébandeli/
 
 
 ### Créditos
 
 
-
-![](../../../../Downloads/Captura de tela de 2022-11-09 21-18-41_Easy-Resize.com.jpg)
+![Captura de tela de 2022-11-09 21-18-41_Easy-Resize com](https://user-images.githubusercontent.com/87938869/200970404-17524522-755e-4cfb-b4d4-3509ed2aff5a.jpg)
