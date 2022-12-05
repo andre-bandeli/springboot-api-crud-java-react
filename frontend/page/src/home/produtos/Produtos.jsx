@@ -1,9 +1,41 @@
 import React from 'react'
 import './produtos.scss'
-
+import { useEffect, useState } from 'react';
 import moto from './moto.png'
+import { Link } from "react-router-dom";
 
 export default function Produtos() {
+
+    const[nome_modelo,setNome_modelo]=useState('')
+    const[preco,setPreco]=useState('')
+    const[descricao,setDescricao]=useState('')
+    const[produto,setProduto]=useState([])
+
+    const handleClick=(e)=>{
+        e.preventDefault()
+        const produto={nome_modelo,preco, descricao}
+        console.log(produto)
+        fetch("http://localhost:8080/api/produto/add",{
+          method:"POST",
+          mode: 'no-cors',
+          headers:{"Content-Type":"application/json"},
+          body:JSON.stringify(produto)
+    
+      }).then(()=>{
+        console.log("Novo produto adicionado.")
+      })
+    }
+
+    useEffect(()=>{
+        fetch("http://127.0.0.1:8080/api/produto/list")
+        .then(res=>res.json())
+        .then((result)=>{
+          setProduto(result);
+        }
+      )
+    },[])
+
+
   return (
     <div className='produtos'>
 
@@ -36,29 +68,29 @@ export default function Produtos() {
             </div>
             <div className="product">
 
+            {produto.map(produto=>(
+
                 <div className="box">
 
                     <div className="imagem">
                             <img src={moto} alt="" />
                     </div>
                     <div className="modelo">
-                        <h2>Yamaha MT-03 ABS 2023</h2>
+                        <h2>{produto.nome_modelo}</h2>
                     </div>
                     <div className="preco">
-                        <h3>A partir de R$ 28.000,00</h3>
+                        <h3>A partir de R$ {produto.preco}</h3>
                         <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
                     </div>
                     <div className="condicoes">
-                        <a href="">
+                        <Link to="/produto/:id">
                             ver detalhes
-                        </a>
-
-
+                       </Link>
                     </div>
-
                 </div>
-
-                <div className="box">
+            ))
+            }
+                {/* <div className="box">
 
                      <div className="imagem">
                             <img src={moto} alt="" />
@@ -247,7 +279,7 @@ export default function Produtos() {
 
                     </div>
                     
-                </div>
+                </div> */}
                 
             </div>
         </div>
