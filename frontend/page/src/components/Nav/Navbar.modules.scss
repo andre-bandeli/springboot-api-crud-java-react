@@ -6,6 +6,7 @@
     background: #ffffff;
     position: fixed;
     border-bottom: 1px solid rgba(48, 45, 45, 0.226);
+    z-index: 99;
 
     ul  {
         width: 100%;
@@ -41,6 +42,8 @@
     text-align: left;
     margin-top: 10vh;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
 }
 .Navbar .mob li{
     width: 100%;

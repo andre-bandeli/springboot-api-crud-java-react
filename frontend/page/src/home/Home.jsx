@@ -1,12 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Nav/Navbar'
+import Card from './card/Card'
+import Header from './header/Header'
 
 
 export default function Home() {
   return (
     <div>
 
-      <Navbar/>
+      <Navbar/>,
+      <Header/>
+      <Card/>
 
     </div>
   )
