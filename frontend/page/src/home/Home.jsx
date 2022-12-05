@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/footer/Footer'
 import Navbar from '../components/Nav/Navbar'
 import Card from './card/Card'
 import Contato from './contato/Contato'
@@ -17,6 +18,7 @@ export default function Home() {
       <Produtos/>
       <Financiamento/>
       <Contato/>
+      <Footer/>
 
     </div>
   )

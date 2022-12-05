@@ -2,7 +2,7 @@
 .contato {
 
     width: 100%;
-    height: 100vh;
+    height: 60vh;
 
     .title {
         width: 100%;
@@ -17,6 +17,101 @@
             font-weight: 300;
             margin-left: 10vh;
             width: 40%;
+        }
+    }
+    .forms {
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        margin-top: 70px;
+
+        h2 {
+            color: black;
+            font-size: 22px;
+            width: auto;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+
+        .standard-basic {
+            width: 100%;
+            margin-top: 20px;
+            border: 1px solid orangered;
+            background-color: rgba(16, 15, 15, 0.859);
+            border-radius: 5px;
+            label {
+                color: rgba(245, 222, 179, 0.662);
+
+            }
+            .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                width: 0px;
+                border: none;
+            }
+            input {
+                color: white;
+                border: none;
+            }
+            
+        }
+        .standard-basic-box {
+            width: 20%;
+            margin-top: 20px;
+            margin-left: 25px;
+            border: 1px solid orangered;
+            background-color: rgba(16, 15, 15, 0.859);
+            border-radius: 5px;
+            margin-right: 35px;
+            label {
+                color: rgba(245, 222, 179, 0.662);
+            }
+            .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                width: 0px;
+            }
+            input {
+                color: white;
+            }
+        }
+        .standard-basic-box-2 {
+            width: 40%;
+            margin-top: 20px;
+            margin-left: 25px;
+            border: 1px solid orangered;
+            background-color: rgba(16, 15, 15, 0.859);
+            border-radius: 5px;
+            label {
+                color: rgba(245, 222, 179, 0.662);
+            }
+            .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+                width: 0px;
+            }
+            input {
+                color: white;
+            }
+        }
+
+
+        .tel {
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 25px;
+
+            h2 {
+                margin-top: 40px;
+            }
+        }
+
+        .btn {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: transparent;
+            border: 1px solid rgb(10, 10, 10);
+        }
+        .btn:hover {
+            background-color: rgba(30, 23, 24, 0.779);
+            color: orangered;
         }
     }
 }

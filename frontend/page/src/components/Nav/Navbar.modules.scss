@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400;500;600&display=swap');
 
 .Navbar {
     width: 100%;
@@ -37,8 +39,16 @@
             }
 
             h2 {
+                font-size: 30px;
+                color: black;
+                margin-left: 17vh;
+                margin-top: 1vh;
+                font-family: 'Cinzel', serif;
+            }
+            h3 {
                 font-size: 20px;
                 color: black;
+                margin-top: 2vh;
             }
         }
         

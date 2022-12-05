@@ -16,6 +16,13 @@ export default function Login() {
             <h1>Login</h1>
             <h2>Cadastrar-se</h2>
           </div>
+
+          <div className="forms">
+            <form action=""> 
+
+            
+            </form>
+          </div>
         </div>
     </div>
   )

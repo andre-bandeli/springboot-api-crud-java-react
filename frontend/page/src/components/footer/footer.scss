@@ -1,0 +1,42 @@
+
+.footer {
+    width: 100%;
+    height: 40vh;
+
+    .social-box {
+        width: 100%;
+        height: 5vh;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .container {
+        width: 80%;
+        height: 70%;
+        margin:auto;
+        display: flex;
+        border-bottom: 1px solid black;
+        
+
+
+        .box {
+            width: 33.3%;
+            margin: auto;
+            height: 100%;
+
+            h2 {
+                margin-left: 4vh;
+            }
+
+            ul {
+                margin-top: 2vh;
+                li {
+                    list-style: none;
+                    padding: 3px;
+                }
+            }
+        }
+    
+    }
+
+}
