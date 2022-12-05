@@ -8,6 +8,13 @@
     border-bottom: 1px solid rgba(48, 45, 45, 0.226);
     z-index: 99;
 
+    img {
+        width: 30px;
+        margin-top: 0px;
+        margin-left: 20vh;
+    }
+
+
     ul  {
         width: 100%;
 
@@ -15,11 +22,24 @@
         margin-top: 0px;
         display: flex;
         justify-content: center;
+        text-align: center;
 
         li {
-            list-style: none;
             width: 33%;
+            list-style: none;
             text-align: center;
+            display: flex;
+
+            a {
+                margin-top: 2vh;
+                margin-left: 2vh;
+                text-decoration: none;
+            }
+
+            h2 {
+                font-size: 20px;
+                color: black;
+            }
         }
         
     }

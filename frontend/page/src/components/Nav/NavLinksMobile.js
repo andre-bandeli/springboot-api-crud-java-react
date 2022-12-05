@@ -1,5 +1,6 @@
 
 import user from '../Nav/user.svg'
+import { Link } from "react-router-dom";
 
 const NavLinksMobile = () => {
 
@@ -8,23 +9,23 @@ const NavLinksMobile = () => {
         <ul className="mob">
             <li>
                 <img src={user}></img>
-                <a href="#header"> Home</a>
+                <Link to="/">Home</Link>
             </li>
             <li>
                 <img src={user}></img>
-                <a href="#portfolio"> Projetos</a>
+                <a href="#portfolio"> Motocicletas</a>
             </li>
             <li>
                  <img src={user}></img>
-                <a href="#cards"> Sobre</a>
+                <a href="#cards"> Automoveis</a>
             </li>
             <li>
                  <img src={user}></img>
-                <a href="#posts"> Certificados</a>
+                <a href="#posts"> Financiamentos</a>
             </li>
             <li>
                  <img src={user}></img>
-                <a href="#ferramentas">Stacks</a>
+                <a href="#ferramentas">Sobre Nós</a>
             </li>
             <li>
                  <img src={user}></img>
