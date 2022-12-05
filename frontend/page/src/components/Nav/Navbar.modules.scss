@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400;500;600&display=swap');
+
+.Navbar {
+    width: 100%;
+    height: 10vh;
+    background: #ffffff;
+    position: fixed;
+    border-bottom: 1px solid rgba(48, 45, 45, 0.226);
+
+    ul  {
+        width: 100%;
+
+        margin: auto;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            width: 33%;
+            text-align: center;
+        }
+        
+    }
+}
+
+.Navbar .MobileNavigation {
+    width: 50%;
+    height: 100px;
+}
+.Navbar .MobileNavigation .Hamburguer {
+    margin-top: 25px;
+    cursor: pointer;
+}
+.Navbar .mob {
+    height: 90vh;
+    width: 30vh;
+    position: absolute;
+    display: inline-block;
+    margin-left: -25vh;
+    text-align: left;
+    margin-top: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.Navbar .mob li{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    border-bottom: 1px solid rgb(96, 99, 102);
+
+    img {
+        width: 50px;
+        margin-left: 25px;
+    }
+
+    a {
+        color: gray;
+        text-decoration: none;
+        margin-top: 6.5vh;
+        margin-left: 4vh;
+        font-size: 20px;
+    }
+}
