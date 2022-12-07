@@ -68,3 +68,42 @@
     }
     
 }
+
+@media (max-width: 768px) {
+    
+.login {
+    display: inline-block;
+    .container-forms {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        margin-top: 10vh;
+
+        
+    }
+
+    .container-text {
+        width: 100%;
+        height: auto;
+        margin-top: 25vh;
+        position: relative;
+
+
+        h1 {
+            margin-left: 5vh;
+            margin-top: 10vh;
+            width: 80%;
+            font-size: 40px;
+
+        }
+        h2 {
+            margin-left: 5vh;
+            width: 80%;
+        }
+
+
+        
+    }
+    
+}
+}

@@ -13,7 +13,7 @@ const NavLinksMobile = () => {
             </li>
             <li>
                 <img src={user}></img>
-                <a href="#portfolio"> Motocicletas</a>
+                <Link to="/motocicletas">Motocicletas</Link>
             </li>
             <li>
                  <img src={user}></img>

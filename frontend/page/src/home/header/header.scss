@@ -9,3 +9,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 550px) {
+    
+    .header {
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

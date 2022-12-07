@@ -104,3 +104,142 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    
+.card {
+    height: auto;
+   
+    .container {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        
+        .box-left {
+            width: 100%;
+            border: none;
+            margin: 0;
+           
+            .imagem {
+             
+                img {
+                 
+                }
+            }
+            .texto {
+                margin-left: 5vh;
+
+                h2 {
+                   
+                }
+                h3 {
+                   
+                }
+                .btn {
+
+                    a {
+                        
+                    }
+                }
+
+            }
+        }
+        .box-right {
+            width: 90%;
+            margin: auto;
+            margin-top: 10vh;
+
+            .imagem {
+               
+
+                img {
+                  
+                }
+            }
+            .texto {
+            
+
+                h2 {
+                   
+                }
+                h3 {
+                   
+                }
+
+                .btn {
+                
+
+                    a {
+                    
+                    }
+                }
+            }
+        }
+    }
+
+}
+}
+
+
+@media (max-width: 550px) {
+    
+    .card {
+       
+        .container {
+            width: 100%;
+            display: inline-block;
+            
+            .box-left {
+                width: 100%;
+                border: none;
+                margin: 0;
+                display: inline-block;
+               
+                .imagem {
+                    width: 100%;
+                 
+                }
+                .texto {
+                    width: 80%;
+                    margin: auto;
+    
+    
+                }
+            }
+            .box-right {
+                width: 90%;
+                margin: auto;
+                margin-top: 10vh;
+                display: inline-block;
+    
+                .imagem {
+                   width: 100%;
+    
+                    img {
+                      
+                    }
+                }
+                .texto {
+                    width: 80%;
+                    margin: auto;
+    
+                    h2 {
+                       
+                    }
+                    h3 {
+                       
+                    }
+    
+                    .btn {
+                    
+    
+                        a {
+                        
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+    }
