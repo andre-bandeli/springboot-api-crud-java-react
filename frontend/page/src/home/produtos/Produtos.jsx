@@ -50,16 +50,16 @@ export default function Produtos() {
             <div className="busca">
 
                 <div className="btn">
-                    <h4>Modelo 1</h4>
+                    <h4>Yamaha MT-03</h4>
                 </div>
                 <div className="btn">
-                    <h4>Modelo 2</h4>
+                    <h4>BMW iX</h4>
                 </div>
                 <div className="btn">
-                    <h4>Modelo 3</h4>
+                    <h4>Honda Street</h4>
                 </div>
                 <div className="btn">
-                    <h4>Modelo 4</h4>
+                    <h4>Audi</h4>
                 </div>
                 
             </div>
@@ -83,9 +83,9 @@ export default function Produtos() {
                         <h4>Condições especiais para clientes web motors. Confira as condições de pagamento</h4>
                     </div>
                     <div className="condicoes">
-                        <Link to="/produto/:id">
+                        <Link to="/produto/{id}">
                             ver detalhes
-                       </Link>
+                        </Link>
                     </div>
                 </div>
             ))

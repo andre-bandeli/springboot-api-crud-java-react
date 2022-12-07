@@ -2,6 +2,13 @@ import React from 'react'
 import './financiamento.scss'
 
 import bmw from './bmw.png'
+import honda from './honda.png'
+import yamaha from  './yamaha.png'
+import volw from  './vw.jpg'
+import audi from  './audi.webp'
+import jeep from  './jeep.jpg'
+import mit from  './mit.png'
+import ferrari from  './ferrari.jpg'
 
 export default function Financiamento() {
   return (
@@ -19,31 +26,31 @@ export default function Financiamento() {
                   <img src={bmw} alt="" />
               </div>
               <div className="card">
-                 <img src={bmw} alt="" />
+                 <img src={honda} alt="" />
 
               </div>
               <div className="card">
-                 <img src={bmw} alt="" />
+                 <img src={volw} alt="" />
 
               </div>
               <div className="card">
-                 <img src={bmw} alt="" />
+                 <img src={yamaha} alt="" />
 
               </div>
               <div className="card">
-                 <img src={bmw} alt="" />
+                 <img src={audi} alt="" />
 
               </div>
               <div className="card">
-                 <img src={bmw} alt="" />
+                 <img src={jeep} alt="" />
 
               </div>
               <div className="card">
-                 <img src={bmw} alt="" />
+                 <img src={mit} alt="" />
 
               </div>
               <div className="card">
-                 <img src={bmw} alt="" />
+                 <img src={ferrari} alt="" />
 
               </div>
               <div className="card">

@@ -25,7 +25,7 @@ const NavLinksMobile = () => {
             </li>
             <li>
                  <img src={user}></img>
-                <a href="#ferramentas">Sobre Nós</a>
+                 <Link to="/sobre">Sobre Nós</Link>
             </li>
             <li>
                  <img src={user}></img>

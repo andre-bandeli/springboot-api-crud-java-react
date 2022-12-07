@@ -1,0 +1,70 @@
+
+.financiamentos {
+
+    width: 100%;
+    height: 80vh;
+
+    .title {
+        width: 100%;
+
+        h2 {
+            margin-left: 10vh;
+            font-size: 35px;
+            font-weight: 300;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 10vh;
+        }
+    }
+
+    .container {
+        width: 95%;
+        height: 50vh;
+        margin: auto;
+        margin-top: 10vh;
+        margin-left: 5vh;
+
+        .acordion {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .ac {
+                width: 80%;
+                margin: auto;
+                margin-top: 2vh;
+                color: black;
+                text-align: left;
+                line-height: 30px;
+                box-shadow: rgba(18, 18, 19, 0.3) 0px 1px 2px 0px, rgba(20, 66, 100, 0.15) 0px 1px 3px 1px;
+                background-color: rgb(246, 248, 245);
+
+                .head {
+                    width: 100%;
+                    cursor: pointer;
+
+                    .h {
+                        height: 50px;
+                        text-align: center;
+                    }
+                    .h:hover {
+                        background-color: rgb(43, 42, 41);
+                        color: whitesmoke;
+                    }
+
+                }
+                
+
+                h3 {
+                    width: 90%;
+                    margin: auto;
+                    margin-bottom: 15px;
+                    font-weight: 200;
+                }
+
+            }
+        }
+    }
+}
