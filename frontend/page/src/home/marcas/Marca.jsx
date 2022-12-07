@@ -1,5 +1,5 @@
 import React from 'react'
-import './financiamento.scss'
+import './marca.scss'
 
 import bmw from './bmw.png'
 import honda from './honda.png'
@@ -10,9 +10,9 @@ import jeep from  './jeep.jpg'
 import mit from  './mit.png'
 import ferrari from  './ferrari.jpg'
 
-export default function Financiamento() {
+export default function Marca() {
   return (
-    <div className='financiamento'>
+    <div className='marca'>
 
         <div className="title">
 

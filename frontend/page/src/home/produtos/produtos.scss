@@ -107,3 +107,138 @@
         }
     }
 }
+
+
+@media (max-width: 1440px) {
+    
+
+    .produtos {
+    
+        .container {
+            
+            .product {
+
+                .box {
+                    width: 30%;
+                    margin: auto;
+                    margin-right: 0;
+                    .imagem {
+                
+
+                        
+                    }
+    
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    
+    .produtos {
+    
+        .container {
+            
+            .product {
+
+                .box {
+                    
+                    .imagem {
+                        img {
+                            width: 270px;
+                        }
+                        
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+
+.produtos {
+
+    .container {
+        
+        .product {
+            width: 90%;
+
+            height: 50%;
+            margin: auto;
+           
+    
+            .box {
+                width: 40%;
+                margin: auto;
+                margin-right: 0;
+                .imagem {
+            
+                    img {
+                        width: 250px;
+                    }
+                    
+                }
+
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 550px) {
+    
+
+    .produtos {
+    
+        .container {
+
+            .title {
+                margin-left: 0vh;
+
+                h2 {
+                    margin-left: 5vh;
+                }
+                h3 {
+                    margin-left: 5vh;
+                }
+            }
+            
+            .busca {
+
+                width: 100%;
+                height: auto;
+                flex-wrap: wrap;
+                .btn {
+                    width: auto;
+                    margin-left: 5vh;
+                }
+            }
+            
+            .product {
+                width: 95%;
+                margin-top: 5vh;
+                height: 50%;
+        
+                .box {
+                    width: 50%;
+                    margin: auto;
+                    margin-top: 5vh;
+                    margin-right: 0;
+
+    
+                    .imagem {
+                
+                        img {
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}

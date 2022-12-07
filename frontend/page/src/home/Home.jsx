@@ -3,10 +3,10 @@ import Footer from '../components/footer/Footer'
 import Navbar from '../components/Nav/Navbar'
 import Card from './card/Card'
 import Contato from './contato/Contato'
-import Financiamento from './financiamento/Financiamento'
 import Financiamentos from './financiamentos/Financiamentos'
 import Header from './header/Header'
 import Produtos from './produtos/Produtos'
+import Marca from './marcas/Marca'
 
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <Header/>
       <Card/>
       <Produtos/>
-      <Financiamento/>
+      <Marca/>
       <Financiamentos/>
       <Contato/>
       <Footer/>
