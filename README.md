@@ -48,7 +48,7 @@ Execute o server da aplicação (porta default: 3000)
 ### Server
 
 Estamos dividindo o pŕojeto em 3 módulos: User, Leads e Produtos. Portanto, é necessário que cada serviço seja executado
-separadamente. 
+separadamente.
 
 
 Caminhe até a pasta :
@@ -70,29 +70,11 @@ Termine com um exemplo de como obter dados do sistema ou como usá-los para uma 
 
 Explicar como executar os testes automatizados para este sistema.
 
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
 ## 📦 Implantação
 
 Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 ## 🛠️ Construído com
-
-Mencione as ferramentas que você usou para criar seu projeto
 
 * [Java 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) - Linguagem backend
 * [Spring Boot](https://spring.io/projects/spring-boot) - Framework Web Java
@@ -102,6 +84,6 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 ---
 
-![](../../../../Imagens/Capturas de tela/img-1.png)
-![](../../../../Imagens/Capturas de tela/img-2.png)
-![](../../../../Imagens/Capturas de tela/img-3.png)
+![1](https://user-images.githubusercontent.com/87938869/206381428-382adc8d-787f-429c-8a8c-6e82c02dd719.jpg)
+![2](https://user-images.githubusercontent.com/87938869/206381444-f98c15d5-0e85-4777-93a3-716d74c54ae5.jpg)
+![3](https://user-images.githubusercontent.com/87938869/206381459-959f305c-2fd5-46ce-a917-8bc9b9d960f8.jpg)
