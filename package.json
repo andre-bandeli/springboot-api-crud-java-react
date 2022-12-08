@@ -4,6 +4,10 @@
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.16",
     "@mui/styled-engine-sc": "^5.10.16",
+    "axios": "^1.2.1",
+    "bootstrap": "^5.2.3",
+    "react-bootstrap": "^2.7.0",
+    "react-redux": "^8.0.5",
     "styled-components": "^5.3.6"
   }
 }

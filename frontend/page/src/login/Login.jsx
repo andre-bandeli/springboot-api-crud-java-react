@@ -1,8 +1,53 @@
-import React from 'react'
+import {React, useState} from 'react'
 import Navbar from '../components/Nav/Navbar'
+import { useDispatch } from "react-redux";
+
 import './login.scss'
 
-export default function Login() {
+import {
+  Row,
+  Col,
+  Card,
+  Form,
+  InputGroup,
+  FormControl,
+  Button,
+  Alert,
+} from "react-bootstrap";
+
+import { authenticateUser } from "./auth";
+
+const Login = (props) => {
+
+
+    const [error, setError] = useState();
+    const [show, setShow] = useState(true);
+    const initialState = {
+      email: "",
+      password: "",
+    };
+    const [user, setUser] = useState(initialState);
+    const credentialChange = (event) => {
+    const { name, value } = event.target;
+      setUser({ ...user, [name]: value });
+    };
+
+    const dispatch = useDispatch();
+
+    const validateUser = () => {
+      dispatch(authenticateUser(user.email, user.password))
+        .then((response) => {
+          console.log(response.data);
+          return props.history.push("/home");
+        })
+        .catch((error) => {
+          console.log(error.message);
+          setShow(true);
+          setError("Invalid email and password");
+        });
+    };
+
+
   return (
     <div className='login'>
         <Navbar/>
@@ -18,12 +63,90 @@ export default function Login() {
           </div>
 
           <div className="forms">
-            <form action=""> 
-
-            
-            </form>
+          <Row className="justify-content-md-center">
+              <Col xs={5}>
+                {show && props.message && (
+                  <Alert variant="success" onClose={() => setShow(false)} dismissible>
+                    {props.message}
+                  </Alert>
+                )}
+                {show && error && (
+                  <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+                    {error}
+                  </Alert>
+                )}
+                <Card className={"border border-dark bg-dark text-white"}>
+                          <Card.Header>
+                          <h2>Login</h2>
+                          </Card.Header>
+                          <Card.Body>
+                            <Form.Row>
+                              <Form.Group as={Col}>
+                                <InputGroup>
+                                  <InputGroup.Prepend>
+                                    <InputGroup.Text>
+                                    </InputGroup.Text>
+                                  </InputGroup.Prepend>
+                                  <FormControl
+                                    required
+                                    autoComplete="off"
+                                    type="text"
+                                    name="email"
+                                    value={user.email}
+                                    onChange={credentialChange}
+                                    className={"bg-dark text-white"}
+                                    placeholder="Enter Email Address"
+                                  />
+                                </InputGroup>
+                              </Form.Group>
+                            </Form.Row>
+                            <Form.Row>
+                              <Form.Group as={Col}>
+                                <InputGroup>
+                                  <InputGroup.Prepend>
+                                    <InputGroup.Text>
+                                    </InputGroup.Text>
+                                  </InputGroup.Prepend>
+                                  <FormControl
+                                    required
+                                    autoComplete="off"
+                                    type="password"
+                                    name="password"
+                                    value={user.password}
+                                    onChange={credentialChange}
+                                    className={"bg-dark text-white"}
+                                    placeholder="Enter Password"
+                                  />
+                                </InputGroup>
+                              </Form.Group>
+                            </Form.Row>
+                          </Card.Body>
+                          <Card.Footer style={{ textAlign: "right" }}>
+                            <Button
+                              size="sm"
+                              type="button"
+                              variant="success"
+                              onClick={validateUser}
+                              disabled={user.email.length === 0 || user.password.length === 0}
+                            >
+                              <h2>Login</h2> 
+                            </Button>{" "}
+                            <Button
+                              size="sm"
+                              type="button"
+                              variant="info"
+                    
+                              disabled={user.email.length === 0 && user.password.length === 0}
+                            >
+                            </Button>
+                          </Card.Footer>
+                        </Card>
+                </Col>
+              </Row>
           </div>
         </div>
     </div>
   )
 }
+
+export default Login;
