@@ -1,73 +1,107 @@
-## API Rest Java Spring Boot + frontend com React JS | Captura de Leads
+# Site Institucional Concessionária Web
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Spring_Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+
+### Uma aplicação web utilizando Spring Boot, React, MySQL e Docker.
 
 
-### Descrição e Motivações
+## Começando
+
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+Os comandos a seguir são realizados em ambiente linux ubuntu 20 (consulte os comandos referentes ao seu sistema operacional).
+
+### 📋 Pré-requisitos
+
+De que coisas você precisa para instalar o software e como instalá-lo?
+
+```
+Dar exemplos
+```
+
+### 🔧 Instalação
+
+Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+
+### Client
+Clone o repositório para sua máquina local:
+```
+ git clone https://github.com/andre-bandeli/springboot-api-crud-java-react.git
+```
+Caminhe até a pasta :
+```
+ cd springboot-api-crud-java-react/frontend/page
+```
+Execute o comando a seguir para instalar as dependências necessárias da aplicação:
+```
+ npm install
+```
+Execute o server da aplicação (porta default: 3000)
+```
+ npm start
+```
+
+### Server
+
+Estamos dividindo o pŕojeto em 3 módulos: User, Leads e Produtos. Portanto, é necessário que cada serviço seja executado
+separadamente. 
 
 
-API para captura de leads, executando operações de CRUD em ambiente Spring Boot. Persistência utilizando Spring JPA, Hibernate,
-e MySQL. Execução do banco de dados em container docker. Frontend utilizando React JS. 
+Caminhe até a pasta :
+```
+ cd springboot-api-crud-java-react/frontend/page
+```
+Execute o comando a seguir para instalar as dependências necessárias da aplicação:
+```
+ npm install
+```
+Execute o server da aplicação (porta default: 3000)
+```
+ npm start
+```
 
-### Instalação:
+Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
+## ⚙️ Executando os testes
 
-Rode a aplicação frontend. Crie uma pasta e clone o projeto. Certifique-se de ter insdtalado em sua máquina o Node e o React (https://pt-br.reactjs.org/).
-Caminhe até a pasta onde encontra-se a raíz do projeto (odonto > 'src', 'public', etc) e instale os pacotes necessários. Em seguida, execute o comando para iniciar a aplicação react.
+Explicar como executar os testes automatizados para este sistema.
 
-        git clone https://github.com/andre-bandeli/springboot-api-crud-java-react.git
-        cd springboot-api-crud-java-react
-        cd frontend 
-        cd leads
-        npx react instal
-        npm start
+### 🔩 Analise os testes de ponta a ponta
 
-Rode a aplicação spring boot
+Explique que eles verificam esses testes e porquê.
 
-      mvn spring-boot:run
+```
+Dar exemplos
+```
 
-### Pacotes Importantes:
+### ⌨️ E testes de estilo de codificação
 
-SASS
+Explique que eles verificam esses testes e porquê.
 
-                npm install sass
+```
+Dar exemplos
+```
 
-react-elastic-carousel
+## 📦 Implantação
 
-                npm -i react-elastic-carousel
+Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
-dom
+## 🛠️ Construído com
 
-                npm i react-router-dom
+Mencione as ferramentas que você usou para criar seu projeto
 
-### Ferramentas utilizadas:
+* [Java 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html) - Linguagem backend
+* [Spring Boot](https://spring.io/projects/spring-boot) - Framework Web Java
+* [Maven](https://maven.apache.org/) - Gerenciador de Dependência
+* [React JS](https://pt-br.reactjs.org/) - Biblioteca JavaScript
+* [Docker](https://www.docker.com/) - Virtualização open source
 
-- Java 11
-- Spring Boot
-- Maven
-- Spring JPA
-- MySQL
-- Docker
-- React JS
-- Html 5
-- CSS 3 / SASS
-- Javascript
+---
 
-
-### Melhorias:
-
-
-### Suporte
-
-Em caso de dúvidas, sugestões ou melhorias, abra uma nova issue ou envie uma mensagem através de alguma de minhas redes
-
-- Linkedin: https://www.linkedin.com/in/andrébandeli/
-
-
-### Créditos
-
-
-![Captura de tela de 2022-11-09 21-18-41_Easy-Resize com](https://user-images.githubusercontent.com/87938869/200970404-17524522-755e-4cfb-b4d4-3509ed2aff5a.jpg)
+![](../../../../Imagens/Capturas de tela/img-1.png)
+![](../../../../Imagens/Capturas de tela/img-2.png)
+![](../../../../Imagens/Capturas de tela/img-3.png)
