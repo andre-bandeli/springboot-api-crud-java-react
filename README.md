@@ -1,4 +1,4 @@
-# Site Institucional Concessionária Web
+## Site Institucional Concessionária Web - Aplicação REST
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -20,14 +20,23 @@ Os comandos a seguir são realizados em ambiente linux ubuntu 20 (consulte os co
 De que coisas você precisa para instalar o software e como instalá-lo?
 
 ```
-Dar exemplos
+Nodejs
+```
+```
+JDK 18
+```
+```
+Maven
+```
+```
+Docker e Docker compose
 ```
 
 ### 🔧 Instalação
 
 Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-### Client
+#### Client (frontend)
 Clone o repositório para sua máquina local:
 ```
  git clone https://github.com/andre-bandeli/springboot-api-crud-java-react.git
@@ -45,7 +54,7 @@ Execute o server da aplicação (porta default: 3000)
  npm start
 ```
 
-### Server
+#### Server (backend)
 
 Estamos dividindo o pŕojeto em 3 módulos: User, Leads e Produtos. Portanto, é necessário que cada serviço seja executado
 separadamente.
