@@ -1,52 +1,36 @@
 import {React, useState} from 'react'
 import Navbar from '../components/Nav/Navbar'
-import { useDispatch } from "react-redux";
+
+import {useLocalState} from './useLocalState'
 
 import './login.scss'
 
-import {
-  Row,
-  Col,
-  Card,
-  Form,
-  InputGroup,
-  FormControl,
-  Button,
-  Alert,
-} from "react-bootstrap";
+export default function Usuario() {
 
-import { authenticateUser } from "./auth";
+  const [jwt, setJwt] = useLocalState("", "jwt")
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
 
-const Login = (props) => {
+  console.log(username)
+  function sendLoginRequest() {
 
-
-    const [error, setError] = useState();
-    const [show, setShow] = useState(true);
-    const initialState = {
-      email: "",
-      password: "",
-    };
-    const [user, setUser] = useState(initialState);
-    const credentialChange = (event) => {
-    const { name, value } = event.target;
-      setUser({ ...user, [name]: value });
+    const reqBody = {
+      username: "teste",
+      password:"teste",
     };
 
-    const dispatch = useDispatch();
-
-    const validateUser = () => {
-      dispatch(authenticateUser(user.email, user.password))
-        .then((response) => {
-          console.log(response.data);
-          return props.history.push("/home");
-        })
-        .catch((error) => {
-          console.log(error.message);
-          setShow(true);
-          setError("Invalid email and password");
-        });
-    };
-
+    fetch("api/auth/login", {
+        headers: {
+           "Content-Type": "application/json", 
+    },
+    method: "post",
+    body: JSON.stringify(reqBody),
+  })
+  .then((response) => Promise.all([response.json(), response.headers]))
+  .then(([body, headers]) => {
+    setJwt(headers.get("authorization"));
+  });
+  }
 
   return (
     <div className='login'>
@@ -63,90 +47,21 @@ const Login = (props) => {
           </div>
 
           <div className="forms">
-          <Row className="justify-content-md-center">
-              <Col xs={5}>
-                {show && props.message && (
-                  <Alert variant="success" onClose={() => setShow(false)} dismissible>
-                    {props.message}
-                  </Alert>
-                )}
-                {show && error && (
-                  <Alert variant="danger" onClose={() => setShow(false)} dismissible>
-                    {error}
-                  </Alert>
-                )}
-                <Card className={"border border-dark bg-dark text-white"}>
-                          <Card.Header>
-                          <h2>Login</h2>
-                          </Card.Header>
-                          <Card.Body>
-                            <Form.Row>
-                              <Form.Group as={Col}>
-                                <InputGroup>
-                                  <InputGroup.Prepend>
-                                    <InputGroup.Text>
-                                    </InputGroup.Text>
-                                  </InputGroup.Prepend>
-                                  <FormControl
-                                    required
-                                    autoComplete="off"
-                                    type="text"
-                                    name="email"
-                                    value={user.email}
-                                    onChange={credentialChange}
-                                    className={"bg-dark text-white"}
-                                    placeholder="Enter Email Address"
-                                  />
-                                </InputGroup>
-                              </Form.Group>
-                            </Form.Row>
-                            <Form.Row>
-                              <Form.Group as={Col}>
-                                <InputGroup>
-                                  <InputGroup.Prepend>
-                                    <InputGroup.Text>
-                                    </InputGroup.Text>
-                                  </InputGroup.Prepend>
-                                  <FormControl
-                                    required
-                                    autoComplete="off"
-                                    type="password"
-                                    name="password"
-                                    value={user.password}
-                                    onChange={credentialChange}
-                                    className={"bg-dark text-white"}
-                                    placeholder="Enter Password"
-                                  />
-                                </InputGroup>
-                              </Form.Group>
-                            </Form.Row>
-                          </Card.Body>
-                          <Card.Footer style={{ textAlign: "right" }}>
-                            <Button
-                              size="sm"
-                              type="button"
-                              variant="success"
-                              onClick={validateUser}
-                              disabled={user.email.length === 0 || user.password.length === 0}
-                            >
-                              <h2>Login</h2> 
-                            </Button>{" "}
-                            <Button
-                              size="sm"
-                              type="button"
-                              variant="info"
-                    
-                              disabled={user.email.length === 0 && user.password.length === 0}
-                            >
-                            </Button>
-                          </Card.Footer>
-                        </Card>
-                </Col>
-              </Row>
+            <div className="username">
+              <label htmlFor="username">Username</label>
+              <input type="username" id='username' value={username} onChange={(event) => setUsername(event.target.value)} />
+            </div>
+            <div className="password">
+              <label htmlFor="password">Senha</label>
+              <input type="password" id='password' value={password} onChange={(event) => setPassword(event.target.value)} />
+            </div>
+            
+            <button id="submit" type='button' onClick={() => sendLoginRequest()}>
+                Login
+            </button>
+        
           </div>
         </div>
     </div>
   )
 }
-
-export default Login;
