@@ -1,6 +1,6 @@
-package com.br.lead.main.repository;
+package com.br.produto.repository;
 
-import com.br.lead.main.model.Marca;
+import com.br.produto.model.Marca;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

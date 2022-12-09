@@ -1,4 +1,4 @@
-package com.br.lead.main.model;
+package com.br.produto.model;
 
 import com.sun.istack.NotNull;
 

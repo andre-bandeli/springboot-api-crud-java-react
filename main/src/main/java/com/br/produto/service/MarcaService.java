@@ -1,7 +1,7 @@
-package com.br.lead.main.service;
+package com.br.produto.service;
 
-import com.br.lead.main.model.Marca;
-import com.br.lead.main.repository.MarcaRepository;
+import com.br.produto.model.Marca;
+import com.br.produto.repository.MarcaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package com.br.lead.main.controller;
+package com.br.produto.controller;
 
-import com.br.lead.main.model.Marca;
-import com.br.lead.main.service.MarcaService;
+import com.br.produto.model.Marca;
+import com.br.produto.service.MarcaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

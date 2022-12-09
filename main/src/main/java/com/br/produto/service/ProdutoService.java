@@ -1,7 +1,7 @@
-package com.br.lead.main.service;
+package com.br.produto.service;
 
-import com.br.lead.main.model.Produtos;
-import com.br.lead.main.repository.ProdutoRepository;
+import com.br.produto.model.Produtos;
+import com.br.produto.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
