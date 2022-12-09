@@ -1,6 +1,13 @@
 version: '2'
 services:
 
+  data:
+    container_name: flask_data
+    image: mysql:latest
+    volumes:
+      - /var/lib/mysql
+    command: "true"
+
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
@@ -8,6 +15,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_ROOT_USER: root
+    volumes_from:
+      - data
     ports:
       - 3306:3306
 
