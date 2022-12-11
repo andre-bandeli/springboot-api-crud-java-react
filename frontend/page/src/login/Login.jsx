@@ -15,8 +15,8 @@ export default function Usuario() {
   function sendLoginRequest() {
 
     const reqBody = {
-      username: "teste",
-      password:"teste",
+      username: username,
+      password:password,
     };
 
     fetch("api/auth/login", {
@@ -26,9 +26,16 @@ export default function Usuario() {
     method: "post",
     body: JSON.stringify(reqBody),
   })
-  .then((response) => Promise.all([response.json(), response.headers]))
+  .then((response) => {
+    if (response.status === 200)
+    return Promise.all([response.json(), response.headers])
+    else
+    return Promise.reject("Login invalido");
+  })
   .then(([body, headers]) => {
     setJwt(headers.get("authorization"));
+  }).catch((message) => {
+    alert(message);
   });
   }
 

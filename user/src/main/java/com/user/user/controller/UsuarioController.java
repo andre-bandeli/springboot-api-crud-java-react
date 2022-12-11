@@ -28,31 +28,31 @@ public class UsuarioController {
     @Autowired
     PasswordEncoder passwordEncoder;
 
-    @Autowired
-    JwtUtils jwtUtils;
+    // @Autowired
+    // JwtUtils jwtUtils;
 
     @Autowired
     private UsuarioService usuarioService;
 
 
-    @PostMapping("/signin")
-    public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
-        Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
+    // @PostMapping("/signin")
+    // public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
+    //     Authentication authentication = authenticationManager.authenticate(
+    //             new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
 
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-        String jwt = jwtUtils.generateJwtToken(authentication);
+    //     SecurityContextHolder.getContext().setAuthentication(authentication);
+    //     String jwt = jwtUtils.generateJwtToken(authentication);
 
-        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-        List<String> roles = userDetails.getAuthorities().stram()
-                .map(item -> item.getAuthority())
-                .collect(Collectors.toList());
+    //     UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
+    //     List<String> roles = userDetails.getAuthorities().stram()
+    //             .map(item -> item.getAuthority())
+    //             .collect(Collectors.toList());
 
-        return ResponseEntity.ok(new JwtResponse(jwt, userDetails.getId(),
-                userDetails.getUsername(),
-                userDetails.getEmail(),
-                roles));
-    }
+    //     return ResponseEntity.ok(new JwtResponse(jwt, userDetails.getId(),
+    //             userDetails.getUsername(),
+    //             userDetails.getEmail(),
+    //             roles));
+    // }
 
 
 
